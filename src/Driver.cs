@@ -41,12 +41,12 @@ namespace Salus
             Console.WriteLine("Hello, World!");
             Driver driver = new Driver();
 
-            driver.parser.getContentHeaders().ForEach(str => Console.WriteLine(str));
+            driver.parser.getHeaders().ForEach(str => Console.WriteLine(str));
 
-            Console.WriteLine(driver.parser.getFileContents().Count);
-            driver.parser.getFileContents().ForEach(strList => 
+            Console.WriteLine(driver.parser.getContent().Count);
+            driver.parser.getContent().ForEach(strList => 
             {
-                for (int i = 0; i < driver.parser.getContentHeaders().Count; i++)
+                for (int i = 0; i < driver.parser.getHeaders().Count; i++)
                 {
                     Console.WriteLine(strList[i]);
                 }
