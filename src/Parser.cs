@@ -53,7 +53,7 @@ namespace Salus
         /// <param name="fileName">the name of the file to be parsed.</param>
         /// <return>
         /// A tuple that contains the files headers in position 0 and the files
-        /// conents in position 2. The headers are a list of strings. The
+        /// contents in position 1. The headers are a list of strings. The
         /// content of the file is a list of arrays of type string.
         /// </return>
         private (List<string>, List<string[]>) parseFile(string fileName)
